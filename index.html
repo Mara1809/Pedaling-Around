@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css" />
+    <!-- endbuild-->
     <!-- Bootstrap CSS -->
 
     <title>Pedaling Around</title>
@@ -14,9 +17,9 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-light  fixed-top">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #CCCCFF;">
             <div class="container">
-                <a class="navbar-brand" href="./index.html"><img src="images/logobike.png" width="54"></a>
+                <a class="navbar-brand" href="./index.html"><img src="images/logo-bike.png" width="200" height="80"></a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                     <span class="navbar-toggler-icon"></span>
@@ -408,36 +411,24 @@
             </div>
         </div>
 
-        <section class="home-newsletter">
-
-            <div class="row row-content">
-                <div class="col-sm-12">
-                    <div class="single">
-                        <h2>Subscribe to our Newsletter</h2>
-                        <div class="input-group">
-
-                            <input type="email" id="email" class="form-control" placeholder="Enter your email"
-                                autofocus="autofocus" minlength="4" required>
-                            <span class="input-group-btn" id="emailInfo">
-                                <button class="btn btn-theme" type="submit">Subscribe</button>
-                            </span>
-                        </div>
-                    </div>
-                </div>
+        <div class="row row-content">
+            <div class="box">
+            <img src="images/newspaper_k72w.png" alt="Man reading newspaper">
+            <h2>Subscribe to our Newspaper</h2>
+            <p>Read about newest news in the cycling world</p>
+            <div class="form-control">
+                <input type="email" class="input" placeholder="Enter email address">
+                <button class="btn">Subscribe</button>
             </div>
+        </div>
 
-        </section>
+     </div>
 
-        <!--<div class = "required">
-                <label for="firstname">First name:</label>
-                <input type="text" name="firstname" id="firstname" class = "required" 
-                  placeholder="Your first name goes here" 
-                  autofocus="autofocus" minlength="4" required /> 
-                <span id="firstnameInfo"></span>
-              </div>-->
+       
+
+           
 
     </div>
-
 
 
     <footer class="footer">
@@ -489,31 +480,17 @@
         </div>
     </footer>
 
-    <script>
-        var myemail = document.getElementById("email");
-        var myemailInfo = document.getElementById("emailInfo");
-        myemail.oninput = function () {
-            if (!this.validity.valid) {
-                myemail.style.backgroundImage = "url(images/invalid.png) ";
-                myemail.style.backgroundRepeat = " no-repeat";
-                myemail.style.backgroundPosition = " right top";
-                myemailInfo.innerHTML = "Your email is too small."
-            }
-            else {
-                myemail.style.backgroundImage = "url(images/valid.png) ";
-                myemail.style.backgroundRepeat = " no-repeat";
-                myemail.style.backgroundPosition = " right top";
-                myemailInfo.style.display = "none";
-            }
-        }
-    </script>
+  
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="jsproject/scripts.js"></script>
+    <!-- endbuild -->
+
 </body>
 
 </html>
