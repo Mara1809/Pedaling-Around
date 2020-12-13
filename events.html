@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-light   fixed-top" style="background-color: #CCCCFF;">
+        <nav class="navbar navbar-expand-md navbar-light  fixed-top" style="background-color: #CCCCFF;">
             <div class="container">
                 <a class="navbar-brand" href="./index.html"><img src="images/logo-bike.png" width="200" height="80"></a>
 
@@ -26,18 +26,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="Navbar">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"><a class="nav-link" href="./index.html"><span
-                                    class="fa fa-home fa-lg"></span>Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./aboutus.html"> <span
-                                    class="fa fa-info fa-lg"></span>
+                        <li class="nav-item "><a class="nav-link" href="./index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./aboutus.html"> 
                                 About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./tours.html"><span
-                                    class="fa fa-list fa-lg"></span>Tours</a>
+                        <li class="nav-item"><a class="nav-link" href="./tours.html">Tours</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="./events.html"><span
-                                    class="fa fa-address-card fa-lg"></span>Events</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="./events.html">Events</a></li>
                     </ul>
-                    <a role="button" class="btn btn-warning btn-sm" href="./tours.html">Book Now</a>
+               
                 </div>
 
             </div>
@@ -45,15 +41,16 @@
     </header>
 
     <div class="container">
-        <div class="row row-content justify-content-center">
+        <div class="row row-content-events justify-content-center" style="margin-top: 100px;">
             <div class="col-12 col-sm-6 ">
-                <h2>Participate in one of the best races in Croatia </h2>
+                <h1 id="h1-events">Participate in one of the 
+                    best races in Croatia</h1>
             </div>
         </div>
 
 
         <div class="row row-content ">
-            <div class="col-12 col-sm-6">
+            <div class="col-12 col-sm-6 flip-box-col">
                 <div class="flip-box">
                     <div class="flip-img">
                         <div class="front">
@@ -77,7 +74,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6">
+            <div class="col-12 col-sm-6 flip-box-col">
                 <div class="flip-box">
                     <div class="flip-img">
                         <div class="front">
@@ -105,8 +102,8 @@
 
 
 
-        <div class="row row-content ">
-            <div class="col-12 col-sm-6">
+        <div class="row row-content-events ">
+            <div class="col-12 col-sm-6 flip-box-col">
                 <div class="flip-box">
                     <div class="flip-img">
                         <div class="front">
@@ -130,7 +127,7 @@
 
             </div>
 
-            <div class="col-12 col-sm-6">
+            <div class="col-12 col-sm-6 flip-box-col">
                 <div class="flip-box">
                     <div class="flip-img">
                         <div class="front">
@@ -167,12 +164,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-5 offset-sm-1 col-sm-2">
-                    <h5>Links</h5>
+                    <h5>Useful Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="./aboutus.html">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="./contactus.html">Contact</a></li>
+                    
+                        <li><a href="https://www.cyclingcroatia.com/">Cycling Croatia</a></li>
+                        <li><a href="https://www.cyclingnews.com/">Cycling News</a></li>
+                        <li><a href="https://www.bicycling.com/">Bicycling</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-sm-5">
@@ -206,7 +203,8 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-auto">
-                    <p> &copy; Copyright 2020 Pedaling Around</p>
+                    <p><span style="margin-left: 40px;">Made with &hearts; by Mara Sverko</span> <br>
+                    <i class="fa fa-creative-commons"></i> Creative Commons 2020 Pedaling Around</p>
                 </div>
             </div>
         </div>
@@ -219,7 +217,6 @@
 <script src="node_modules/tether/dist/js/tether.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="js/scripts.js"></script>
 <!-- endbuild -->
 
 </body>
